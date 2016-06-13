@@ -44,11 +44,11 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// TODO: 2 Create a new record store in app.js
+	// XXX: 2 Create a new record store in app.js
 	var RecordStore = __webpack_require__( 1 );
 	var SampleRecords = __webpack_require__( 5 );
 	var Record = __webpack_require__( 2 );
-	var RecordStoreViewer = __webpack_require__( 7 );
+	var RecordStoreViewer = __webpack_require__( 6 );
 	
 	window.onload = function() {
 	
@@ -16582,8 +16582,7 @@
 
 
 /***/ },
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	var RecordStoreViewer = function( recordStore ) {
@@ -16595,28 +16594,28 @@
 		render: function( recordStore ) {
 			console.log("creating a Record Store in Browser ", recordStore);
 	
+			// XXX: 1.2 - Display the name and city of the RecordStore
 			var mainHeaderDisplay = document.getElementById('record-store-name');
 			mainHeaderDisplay.innerText = recordStore.name;
 	
 			var subHeaderDisplay = document.getElementById('record-store-city');
 			subHeaderDisplay.innerText = recordStore.city;
 	
+			// XXX: 1.1 - Display the inventory list
 			var inventoryDisplay = document.getElementById("record-store-inventory");
 			for (record of recordStore.inventory) {
 				var recordListInventory = document.createElement("li");
-				recordListInventory.innerText = "Artist: " + record.artist + ", Album: " + record.album + ", price: " + record.price.toFixed(2);
+				recordListInventory.innerText = "Artist: " + record.artist + ", Album: " + record.album + ", price: £" + record.price.toFixed(2);
 				inventoryDisplay.appendChild( recordListInventory );
 			}
+		},
 	
-	
-			// TODO: 1.1 - Display the inventory list
-	
-			// TODO: 1.2 - Display the name and city of the RecordStore
-	
-	
+		storeRecords: function( records ) {
+			localStorage.setItem("storedRecords", JSON.stringify( Records ));
 		}
-	// TODO: 3 Further - Add a FORM to add a new Record to the RecordStore.
-	// TODO: 4 Further - Add ability to sell record
+		// TODO: 3 Further - Add a FORM to add a new Record to the RecordStore.
+	
+		// TODO: 4 Further - Add ability to sell record
 	
 	};
 	

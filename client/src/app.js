@@ -1,4 +1,4 @@
-// TODO: 2 Create a new record store in app.js
+// XXX: 2 Create a new record store in app.js
 var RecordStore = require( "./record_store/record_store" );
 var SampleRecords = require( "./sample_records.json" );
 var Record = require( "./record_store/record.js" );

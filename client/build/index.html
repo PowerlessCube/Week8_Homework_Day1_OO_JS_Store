@@ -6,10 +6,25 @@
 		<script src="bundle.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<div>
+		<div id="record-store">
 			<h1 id="record-store-name"></h1>
 			<h2 id="record-store-city"></h2>
 			<ul id="record-store-inventory"></ul>
 		</div>
+		<div>
+			<form action="" id="new-record">
+				<h4>Artist Name</h4>
+				<input type="text" id="artist-input" placeholder="Artist Name"><br>
+
+				<h4>Album Title</h4>
+				<input type="text" id="album-input" placeholder="Album Title"><br>
+
+				<h4>Selling Price</h4>
+				<input type="text" id="price-input" placeholder="Selling Price"><br>
+
+				<input type="button" value="Add record to Inventory" id="add-record">
+			</form>
+		</div>
+
 	</body>
 </html>
