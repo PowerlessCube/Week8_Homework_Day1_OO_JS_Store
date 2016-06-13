@@ -1,0 +1,15 @@
+{
+  "name": "js_record_webpack",
+  "version": "1.0.0",
+  "description": "JS record store Homework modified Week 8 working with express",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha specs",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

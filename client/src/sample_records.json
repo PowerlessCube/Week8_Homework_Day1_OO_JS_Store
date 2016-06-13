@@ -1,0 +1,22 @@
+module.exports = [
+	{ "artist": "AURORA",
+    "album": "All My Deomons Greeting Me As A Friend",
+    "price": 10.99
+  },
+  { "artist": "Blur",
+    "album": "Think Tank",
+    "price": 7.99
+  },
+	{ "artist": "Gorillaz",
+    "album": "Plastic Beach",
+    "price": 11.99
+  },
+	{ "artist": "Gorillaz",
+    "album": "Demon Days",
+    "price": 11.99
+  },
+	{ "artist": "One Direction",
+    "album": "Go That Direction",
+    "price": 11.99
+  }
+]
