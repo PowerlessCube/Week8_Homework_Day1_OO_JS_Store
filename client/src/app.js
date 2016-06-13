@@ -14,6 +14,6 @@ window.onload = function() {
 	}
 
 	var recordStoreViewer = new RecordStoreViewer( recordStore );
-	console.log(recordStore);
+	recordStoreViewer.render( recordStore );
 
 };
